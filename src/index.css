@@ -1,0 +1,69 @@
+@import "tailwindcss";
+@import "@fontsource/cairo/400.css";
+@import "@fontsource/cairo/600.css";
+@import "@fontsource/cairo/700.css";
+@import "@fontsource/cairo/800.css";
+@import "@fontsource/outfit/600.css";
+@import "@fontsource/outfit/700.css";
+@import "@fontsource/outfit/800.css";
+
+@layer base {
+  :root {
+    --bg-canvas: #FAF9F5;
+    --ink-primary: #182230;
+    --ink-muted: #526071;
+    --accent-mint: #4FD1A5;
+    --accent-coral: #FF6B6B;
+    --accent-yellow: #FFD95A;
+    --accent-blue: #5B9BD5;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+    font-family: 'Cairo', 'Outfit', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-canvas);
+    color: var(--ink-primary);
+  }
+}
+
+.font-display {
+  font-family: 'Outfit', 'Cairo', system-ui, sans-serif;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Smooth 3D card flip for UNO mystery cards */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "BE CREATIVE | يومنا مختلف",
+  "description": "عرض تقديمي تفاعلي لإدارة احتفالية الموظفين وألعاب الفريق",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
